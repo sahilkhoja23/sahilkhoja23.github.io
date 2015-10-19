@@ -1,0 +1,39 @@
+/*canvass stuff*/
+/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	/*You can use any kind of background here.*/
+	background: #003366;
+}
+canvas {
+	display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main {
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.main h1 {
+    color: white;
+    text-align: left;
+    font-size:4em;
+    z-index: 1;
+    padding-top: 3em;
+}
+
+.main h2{
+    color:white;
+    text-align: left;
+    font-size:3em;
+    z-index: 1;
+}
+
+.social{
+    padding-top: 1em;
+}
