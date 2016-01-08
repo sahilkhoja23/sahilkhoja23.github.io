@@ -1,0 +1,336 @@
+@media screen and (max-width: 600px) {
+    /* .hide prevents the third image in a row
+    from showing up in a two-column layout
+    (i.e. by itself) */
+    .logo, .down, .hide {
+        display: none;
+    }
+
+    #ye {
+        font-size: 2.5em;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    /*  NAV  ============================================================================= */
+
+    /* Project page nav */
+
+    .logo p {
+        display: visible;
+        color: rgba(0, 0, 0, 0.8);
+        float: left;
+        font-size: 3em;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        margin: -5px 0 0 6%;
+        font-family: 'Lato', Helvetica, sans-serif;
+
+        transition: all 0.28s;
+    }
+
+    .logo p:hover {
+        color: #b31b1b;
+        transition: all 0.28s;
+    }
+
+    .down {
+        width: 50px;
+        height: 50px;
+    }  
+
+    /*  HOME PAGE  ============================================================================= */ 
+
+    .card-container img {
+        opacity: 0.8;
+    }
+
+    .zoom:hover {
+        opacity: 1;
+    }
+
+    /*  CASE  ============================================================================= */
+        
+    .case-content h2 {
+        padding: 25px 0 40px 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.5em;
+    }    
+
+    /* Shrinks the size of the Snapchat poster and phone
+    renderings so that they fit in the browser window. */
+    .snapchat {
+        margin: 0 auto;
+        display: block;
+        width: 400px;
+    } 
+
+    section p, section h2, section h3, section blockquote {
+        width: 85%;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 919px) {  
+
+    /*  HOME PAGE  ============================================================================= */
+        
+
+    #home-initials {
+        font-size: 17.5em;
+        text-align: center;  
+        margin-top: 35px;
+    }
+
+    .home-header {
+        height: 345px;
+        margin-bottom: 60px;
+    }
+
+    .intro {
+        font-size: 1.6em;
+        text-align: left;
+        margin: 0 0 50px 9%;
+    }     
+
+    .down, .hide {
+        display: none;
+    }
+
+    /*  PROJECT PAGES  ============================================================================= */
+
+    .case-header {
+        height: 400px;
+    }
+
+    .case-nav ul {
+        float: right;
+        margin-right: 2%;
+    }
+
+    .project-title, .project-subtitle {
+        text-align: left;
+        margin-left: 6%;
+    }       
+
+    .project-title {
+        font-size: 6em;
+        margin-top: 30px;
+    }
+
+    .project-subtitle {
+        font-size: 1.5em;
+    }   
+
+    /* Refers to the two columns at the top of each 
+    project page. */
+    .meta {
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .long {
+        font-size: 3.75em;
+    }
+
+    .descender {
+        padding-top: 10px !important;
+    }
+}
+
+@media screen and (min-width: 920px) {
+
+    nav ul {
+        float: right;
+        margin-right: 2%;
+    }
+
+    /*  HOME PAGE  ============================================================================= */
+    
+   .home-header {
+        height: 425px;
+        margin-bottom: 70px;
+    }
+
+    .content {
+        margin: 0 0 0 6.75%;
+    }
+
+    #home-initials {
+        display: inline-block;
+        position: absolute;
+        margin-top: 0px;
+
+        font-size: 29em;
+        text-align: left;
+    }
+
+    .intro {
+        font-size: 2.1em;
+        margin: 0 0 70px 9%;
+        max-width: 850px;
+
+    }    
+
+    .intro a:hover {
+        border-bottom: 10px solid #00b454;
+
+    }
+
+    .wrapper {
+        width: 100%;
+    }        
+
+    .down {
+        float: right;
+        border-radius: 50%;
+        border: none;
+        margin-right: 5%;
+        margin-top: -125px;
+        box-shadow: 0 3px 6px rgba(0,0,0, .16),
+                    0 3px 6px rgba(0,0,0, .23) ;
+    }
+
+    /*  PROJECT PAGES  ============================================================================= */
+
+    .case-header {
+        height: 500px;
+    }
+
+    .project-title, .project-subtitle {
+        text-align: left;
+        margin-left: 6%;
+    }       
+
+    .project-title {
+        font-size: 8em;
+        padding-top: 200px;
+    }
+
+    .project-subtitle {
+        border-bottom: none;
+        padding-top: 0;
+
+        font-size: 1.65em;
+    }
+
+    .project-subtitle span {
+        border-bottom: 10px solid #fcfcfc;
+        padding-bottom: 20px;
+    }
+
+    .descender {
+        padding-top: 10px !important;
+    }
+
+    .long {
+            font-size: 5.5em;
+    }
+
+    .meta {
+        line-height: 1.5em;
+        padding-right: 50px;
+        margin-bottom: 35px;
+    }
+
+    section p, section h2, section h3 {
+        font-size: 1.075em;
+        line-height: 1.6em;
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1070px) {
+    #home-initials {
+        font-size: 23.75em;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+
+    .long {
+        font-size: 7.25em;
+    }
+}
+
+/*  LANDSCAPE  ============================================================================= */
+
+@media screen and (max-width: 700px) and (orientation:landscape) {
+    .case-header {
+        height: 350px;
+    }
+
+    .project-title {
+        margin-top: -40px;
+    }
+
+    .project-subtitle span {
+        border-bottom: none;
+    }
+
+    .project-subtitle {
+        border-bottom: none;
+    }
+}
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.wrapper {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+

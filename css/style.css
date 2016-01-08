@@ -1,0 +1,249 @@
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fcfcfc; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+body {
+	background-color: #fcfcfc;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Lato', Helvetica, sans-serif;
+}
+
+em {
+	font-style: italic;
+}
+
+.intro, .intro a, .card-container a {
+	color: #474747;
+}
+
+/*  NAV BAR  ============================================================================= */
+
+nav {
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 300;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 30px;
+	border: 5px solid #fcfcfc;
+
+}
+
+nav li a {
+	color: #fcfcfc;
+	display: block;
+	padding: 10px;
+
+	transition: all 0.28s;
+}
+
+nav li a:hover {
+	background: #fcfcfc;
+	color: #474747;
+
+	transition: all 0.75s;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+
+/*  HEADER  ============================================================================= */
+
+.home-header {
+	background-color: #b31b1b;
+	/* background-image: url('../images/mounttam.jpg'); */
+	height: 285px;
+	width: 100%;
+	background-attachment: fixed;
+	margin-bottom: 35px;
+
+	transition: all 0.28s;
+}
+
+.home-header .content h1 {
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 10em;
+	font-weight: 800;
+
+	color: #fcfcfc;
+	letter-spacing: 1px;
+	margin: 37px 0 30px 0;
+
+	transition: all 0.28s;
+}
+
+/*  INTRO  ============================================================================= */
+
+.intro {
+	width: 82.5%;
+	margin: 0 auto;
+
+	font-weight: 300;
+	font-size: 1.225em;
+	line-height: 1.35em;
+	letter-spacing: 0.5px;
+	max-width: 800px;
+	
+	margin-bottom: 25px;
+
+	transition: all 0.28s;
+
+}
+
+.intro a {
+	border-bottom: 1px solid #b31b1b;
+	text-decoration: none;
+
+	transition: border 0.28s;
+}
+
+.intro a:hover {
+	border-bottom: 3px solid #b31b1b;
+
+	transition: border 0.28s;
+}
+
+/* Gives extra space between "Say hi" line and intro */
+
+.intro span {
+			margin-top: 0.6em;
+            display: block;
+        }
+}
+
+/*  PORTFOLIO CARDS  ============================================================================= */
+
+.portfolio {
+	overflow: auto; 
+}
+
+.portfolio-container {
+	overflow: auto;
+	margin-bottom: 5%;
+}
+
+.portfolio {
+	margin-top: 5%; /* Ensures that image fils card */
+	width: 85%;
+	margin: 0 auto;
+}
+
+.card {
+	border-radius: 2px;
+	margin-bottom: 30px;
+	background-color: #fff;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+
+	transition: all .28s;
+}
+
+.card .card-container a {
+	letter-spacing: 0.25px;
+}
+
+.card:hover {
+	box-shadow: 0 3px 10px rgba(0,0,0,.23),
+	            0 3px 10px rgba(0,0,0,.16);
+
+	transition: all .28s cubic-bezier(.4,0,.2,1);
+}
+
+
+.card-container img {
+ 	width: 100%;
+ 	opacity: 1
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+}
+
+.zoom {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.zoom img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	transition: all 0.5s ease;
+}
+
+.zoom:hover img {
+
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform:scale(1.05);
+
+	transition: all 0.5s ease;
+}
+
+.card h1 {
+	padding-top: 15px;
+	font-weight: 700;
+	padding: 15px 20px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.tag {
+	font-style: italic;
+	font-weight: 300;
+	color: #aaa;
+}
+
+.dot {
+	font-weight: 400;
+}
+
+/*  FOOTER  ============================================================================= */
+
+footer {
+	width: 100%;
+	text-align: center;
+	color: #aaa;
+	font-family: 'Lato', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	background-color: white;
+	border-top: 1px solid #ddd;
+	letter-spacing: 1px;
+	padding: 50px 0;
+	font-size: 0.85em;
+	line-height: 1.5em;
+}
+
+/*  MISC.  ============================================================================= */
+
+
+

@@ -1,178 +1,156 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="resume personal website email">
-	<meta name="author" content="Sahil Khoja sahilkhoja23 Cornell">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	    <meta charset="UTF-8">
 
-	<title>Quora</title>
+		<title>Quora - sahil khoja</title>
 
-	<!-- CSS -->
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
-	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
-	<link href="assets/css/animate.css" rel="stylesheet">
-    
-	<!-- Custom styles CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-    
-    <script src="assets/js/modernizr.custom.js"></script> 
-</head>
-<body>
-    
-   <!-- Preloader -->
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link rel="stylesheet" href="css/case.css" type="text/css">
+		<link rel="stylesheet" href="css/grid.css" type="text/css">
+		 <link rel="stylesheet" href="css/media-queries.css" type="text/css">
+		 <link rel="stylesheet" href="css/style.css" type="text/css"> 
+		 <script src="jquery-1.11.2.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>	
 
-   	<!-- Header -->
-
-	<section id="portfolio" class="pfblock">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-6 col-sm-offset-3">
-
-					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">Quora</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle" style="padding-bottom:2em;">
-							UX Research
-						</div>
+		<header id="quora" class="case-header">
+			<nav class="case-nav">
+				<a href="index.html">
+					<div class="logo">
+						<p>sahil.</p>
 					</div>
+				</a>
 
+				<ul>
+					<li><a target="_blank" href="https://medium.com/@sahkho">blog</a></li>
+					<li><a target="_blank" href="resume.pdf">résumé</a></li>			
+				</ul>
+			</nav>
+
+			<h1 class="long project-title">
+				Quora.
+			</h1>
+			<h2 class="descender project-subtitle">
+				<span>Making Quora a Better Mobile Experience.</span>
+			</h2>
+		</header>
+
+		<div class="case-container">
+			<div class="case">
+
+				<div class="row">
+					<div class="meta col span_2">
+						<h2>Overview</h2>
+
+					<p>Quora is a product that I’ve been using for about 3 years now, and I love it. But I wanted to see if it could be even better. So I went out to test the mobile experience of Quora with two tasks: 
+<br>
+1. Ask a question on Quora 
+<br>
+2. Follow a new topic on Quora</p>
+				</div>
+					
+					<div class="col span_1">
+						<h2>Tools</h2>
+						<p>Sketch, Framer, Quicktime</p>
+					</div>
+					
 				</div>
 
+                <img src="images/q0.png"></img>
+
+				<div class="row">
+
+					<section class="case-content">
+
+						<h2>Objective</h2>
+                        
+                        <p>I wanted to see if there were any points of friction for a first time user experience. Here's what the current mobile UI looks like:</p>
+                        
+                        <div class="constrain"><img style="width: 50%; height: 50%;" src="images/q1.png"></div>
+                        
+                        <p>It didn't meet our standards, and we were unhappy with this version 1.0. So, we used the grant money to partner with the University of Texas - Dallas to build the product the way we invisioned it.</p>
+                        
+
+                        
+                        <h2>Key Findings</h2>
+                        <br>
+                        <h2>Write</h2>
+
+						<p>Users think ‘write’ is for writing a question. It’s not, its for writing answers.
+Here’s the process 86% of users went through when trying to ask a question on Quora:</p>
+                        
+                        <div class="constrain"><img style="width: 50%; height: 50%" src="images/q2.gif"</div>
+                            
+                        <h3>"Oh so write means write an answer, not a question"<br>"Do I ask a question or write a question?"</h3>
+                        
+                        <br>
+                        
+                        <p>A specific case involved three community college students who were cheating on their History exam. When I approached them about Quora, they went ahead and asked a question on their exam:</p>
+                        
+                        <div class="constrain"><img style="width: 50%; height: 50%" src="images/q3.png"</div>
+                        
+                        <h3>"Wait, why would I write an answer to my own question?"</h3>
+                        
+                        <br>
+                        
+                        <p>In another case, a user pointed out that the ‘Write Answer’ function was available on both the ‘Home’ and ‘Write’ tabs.</p>
+                        <br>
+                            
+                        <h3>"Why is there an entire tab devoted to writing answers if I can do it from here?"</h3>
+                        
+                        <br>
+                        
+                        <p>The value that Quora brings is its community of writers who specialize in specific subjects. User’s immediately recognized this upon seeing the bio’s of people who had answered previous questions, even comparing it to Yahoo Answers as being much more credible. But, first time users aren’t coming into Quora to write answers to everyone’s questions. They’re coming to find the best answer to their question. And the fact that it takes 3 steps to ask a question presents a major usability issue.<p>
+                        
+                        <h2>Key Issues</h2>
+                        
+                        <p>The crux of the issue is the search box itself. The magnifying glass screams search. Yet the placeholder text prompts the user to ‘Ask Quora.’ Remove the magnifying glass or change the placeholder text to ‘Search Quora.’ A confused reader sees the contradiction above, and then shifts their view to the bottom of the screen, completely missing the ‘Ask Quora’ function. This search box issue also contributed to the fact that no user was able to follow a new topic in under 5 steps:</p>
+                        
+                        <div class="constrain"><img style="width: 50%; height: 50%" src="images/q4.gif"</div>
+                        
+                        <p>Many users, throughout their Quora experience, will expand the topics that they follow. The same way we accept new friends on Facebook, follow additional influencers on Twitter, keep up with different cities on Snapchat, and read stories outside our followed tags on Medium. In order to expand, there needs to be an easier way of exploring different topics. Quora has a wealth of knowledge and its disappointing when new users can’t find this additional value within 2 clicks.</p>
+                        
+                        <h2>Potential Causes</h2>
+                        
+                        <p>When users clicked edit on the dropdown menu, they expected the option of adding new topics after clicking ‘Edit’. Users can delete topics through the ‘Edit’ function. They should be able to add topics as well.
+After realizing the dropdown menu doesn’t help too much, users go straight to the search box. Why? Because the magnifying glass is directly next to the dropdown menu. What does the magnifying glass represent? Search.</p>
+                        
+                        
+                        
+ 
+											
+					</section>
+				</div>
 			</div>
-            
-        </div>
-            <!-- .row -->
-        
-        <section id="portfolio">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-12 col-sm-offset-0">
-
-                    <h2 style="text-align:left; margin-bottom:0.2em;">Overview</h2>
-                    <h3 class="pfblock1-description">I didn't want to wait for an internship opportunity to come to me, so instead I went out to the field on my own to do the work of an internship before I even applied. Quora is a product that I’ve been using for about 3 years now, and I love it. But I wanted to see if it could be even better. So I went out to test the mobile experience of Quora with two tasks: <br><br>1. Ask a question on Quora <br> 2. Follow a new topic on Quora </h3>
+		</div>
 
 
-                    <h2 style="text-align:left; margin-bottom:0.2em;">Objective</h2>
-                    <h3 class="pfblock1-description">I wanted to see if there were any points of friction for a first time user experience. Here's what the current mobile UI looks like:</h3>
+		<footer>
+				<p>&#9400;&nbsp;&nbsp;Sahil Khoja&nbsp;&nbsp;·&nbsp;&nbsp;2015</p>
+		</footer>
 
-                    <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-4">
-                    <div>
-                        <figure style="padding-bottom:2em">
-                            <img src="assets/images/qmobui.png" alt="img01"/>
-                        </figure>
-                    </div>
-                </div>
-                </div>
-
-                    <h2 style="text-align:left; margin-bottom:0.2em;">Key Findings</h2>
-                    <h3 class="pfblock1-description"><br><div style="font-size: 1.5em">WRITE</div><br><strong>Users think ‘write’ is for writing a question. It’s not, its for writing answers.</strong><br>Here’s the process 86% of users went through when trying to ask a question on Quora:</h3>
-
-
-                     <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-4">
-                    <div>
-                        <figure style="padding-bottom:2em">
-                            <img src="assets/images/qprocess.gif" alt="img01"/>
-                        </figure>
-                    </div>
-                </div>
-                </div>
-
-                <h3 class="pfblock1-description col-xs-12 col-sm-12 col-md-6 col-md-offset-3" style="font-size: 1.5em; padding-bottom: 1em"><i>"Oh so write means write an answer, not a question"</i><br><i>"Do I ask a question or write a question?"</i></h3>
-
-                <h3 class="pfblock1-description" style="padding-top: 6em">A specific case involved three community college students who were cheating on their History exam. When I approached them about Quora, they went ahead and asked a question on their exam:</h3>
-
-                     <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-4">
-                    <div>
-                        <figure style="padding-bottom:2em">
-                            <img src="assets/images/wtf.png" alt="img01"/>
-                        </figure>
-                    </div>
-                </div>
-                </div>
-
-                    <h3 class="pfblock1-description col-xs-12 col-sm-12 col-md-6 col-md-offset-3" style="font-size: 1.5em; padding-bottom: 1em"><i>"Wait. Why would I write an answer to my own question?
-"</i></h3>
-
-                    <h3 class="pfblock1-description" style="padding-top: 6em">In another case, a user pointed out that the ‘Write Answer’ function was available on both the ‘Home’ and ‘Write’ tabs.</h3>
-
-                    <h3 class="pfblock1-description col-xs-12 col-sm-12 col-md-6 col-md-offset-3" style="font-size: 1.5em; padding-bottom: 1em"><i>"Why is there an entire tab devoted to writing answers if I can do it from here?"</i></h3>
-
-                    <h3 class="pfblock1-description" style="padding-top: 5em">The value that Quora brings is its community of writers who specialize in specific subjects. User’s immediately recognized this upon seeing the bio’s of people who had answered previous questions, even comparing it to Yahoo Answers as being much more credible.</h3>
-
-                    <h3 class="pfblock1-description">But, first time users aren’t coming into Quora to write answers to everyone’s questions.</h3>
-
-                    <h3 class="pfblock1-description col-xs-12 col-sm-12 col-md-6 col-md-offset-3" style="font-size: 1.5em; padding-bottom: 1em"><i>They’re coming to find the best answer to their question.</i></h3>
-
-                    <h3 class="pfblock1-description" style="padding-top: 5em">And the fact that it takes 3 steps to ask a question presents a major usability issue.</h3>
+			<!-- Preloader -->
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
+</script>
+	</body>
+	<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
 
 
 
-                <h3 class="pfblock1-description"><br><div style="font-size: 1.5em"><strong>RECOMMENDATIONS</strong></div></h3>
-                    <h3 class="pfblock1-description">The crux of the issue is the search box itself. The magnifying glass screams search. Yet the placeholder text prompts the user to ‘Ask Quora.’
-</h3>
-
-                    <h3 class="pfblock1-description">Remove the magnifying glass <strong>or</strong> change the placeholder text to ‘Search Quora.’ A confused reader sees the contradiction above, and then shifts their view to the bottom of the screen, completely missing the ‘Ask Quora’ function.
-</h3>
-
-                <h3 class="pfblock1-description"><br><div style="font-size: 1.5em">FOLLOW A NEW TOPIC</div><br><strong>No user was able to follow a new topic in under five steps:</strong><br></h3>
-
-               <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-4">
-                    <div>
-                        <figure style="padding-bottom:2em">
-                            <img src="assets/images/follow.gif" alt="img01"/>
-                        </figure>
-                    </div>
-                </div>
-                </div>
-
-                <h3 class="pfblock1-description col-xs-12 col-sm-12 col-md-6 col-md-offset-4" style="font-size: 1.5em; padding-bottom: 1em"><i>"Oh that's where it was"</i></h3>
-
-                <h3 class="pfblock1-description" style="padding-top: 6em">Many users, throughout their Quora experience, will expand the topics that they follow. The same way we accept new friends on Facebook, follow additional influencers on Twitter, keep up with different cities on Snapchat, and read stories outside our followed tags on Medium.</h3>
-
-                <h3 class="pfblock1-description">In order to expand, there needs to be an easier way of exploring different topics. Quora has a wealth of knowledge and its disappointing when new users can’t find this additional value within 2 clicks.</h3>
-
-                <h3 class="pfblock1-description"><br><div style="font-size: 1.5em"><strong>RECOMMENDATIONS</strong></div></h3>
-                    <h3 class="pfblock1-description">When users clicked edit on the dropdown menu, they expected the option of adding new topics after clicking ‘Edit’. Users can delete topics through the ‘Edit’ function. They should be able to add topics as well.
-</h3>
-
-                    <h3 class="pfblock1-description">After realizing the dropdown menu doesn’t help too much, users go straight to the search box. Why? Because the magnifying glass is directly next to the dropdown menu. What does the magnifying glass represent? <strong>Search.</strong>
-</h3>
-
-                    <h2 style="text-align:left; margin-bottom:0.2em;">Up Next</h2>
-                    <h3 class="pfblock1-description">Part 1 of creating a better mobile experience for Quora was user testing. The research presented that there is some room for improvement for the mobile platform. Part 2 involves creating prototypes based on this feedback & testing these new flows with similar users.</h3>
-
-        </div>
-    
-    
-<div class="scroll-up">
-		<a href="index.html#portfolio"><i class="fa fa-angle-left"></i></a>
-	</div>
-    
-    <!-- Scroll to top end-->
-
-	<!-- Javascript files -->
-
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.js"></script>
-	<script src="assets/js/jquery.sticky.js"></script>
-<!--	<script src="assets/js/smoothscroll.js"></script>-->
-	<script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.easypiechart.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.cbpQTRotator.js"></script>
-	<script src="assets/js/custom.js"></script>
-
-</body>
-</html>    
-    
-
+</html>

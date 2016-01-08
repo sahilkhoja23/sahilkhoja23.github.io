@@ -1,0 +1,76 @@
+    body {
+        display: flex;
+        justify-content: center;
+        color: #23283c;
+        line-height: 1.75em;
+        font-weight: 400;
+        font-size: 1.3rem;
+        font-family: "adobe-caslon-pro", garamond, serif;
+    }
+
+    .content {
+        display: block;
+        max-width: 40em;
+        padding: 0em 15vw 0 2em;
+    }
+
+    article {
+        padding: 0em 0 1.5em;
+    }
+
+    h1 {
+        line-height: 1.25em;
+        color: #b31b1b;
+        font-size: 3.157em;
+        font-weight: 700;
+        font-family: "futura-pt", Avenir, Helvetica, Arial, sans-serif;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    article a {
+        color: #4f7496;
+        color: #333a57;
+/*            font-weight: 600;*/
+/*            text-decoration: none;*/
+/*            box-shadow: 0 -2px 0 0 #4f7496 inset*/
+    }
+
+    a:hover {
+        color: #b31b1b;
+        text-decoration: underline;
+    }
+
+    footer p {
+        color: rgba(51, 58, 87, .75);
+        font-size: .75em;
+        font-family: "futura-pt", Avenir;
+        font-weight: 400;
+    }
+
+    footer a {
+        color: rgba(51, 58, 87, 1);
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #b31b1b;
+        text-decoration: underline;
+    }
+
+    hr {
+        display: block;
+        height: 4px;
+        background-color: #b31b1b;
+        border: none;
+        margin: .5em 0;
+    }
+
+    hr.subdivider {
+        height: 0px;
+        background: none;
+        border-bottom: 2px dotted #333a57;
+        opacity: .3;
+    }

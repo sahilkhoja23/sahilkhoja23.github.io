@@ -1,0 +1,200 @@
+a, .case-nav a, .case {
+	color: #474747;
+}
+
+.case h2, .case h3 {
+	color: rgb(0,0,0,0.8);
+}
+
+.project-title, .case-header, 
+.case-nav li a:hover, .project-subtitle {
+	color: #fcfcfc;
+}
+
+a {
+	border-bottom: 1px solid #b31b1b;
+
+	transition: all 0.28s;
+}
+
+a:hover {
+	border-bottom: 3px solid #b31b1b;
+
+	transition: all 0.75s;
+}
+
+
+/*  NAV  ============================================================================= */
+
+.case-nav {
+	background-color: white;
+	padding: 20px 0 20px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+	opacity: 0.995;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,.12),
+				0 1px 2px rgba(0,0,0,.24);
+}
+
+.case-nav li {
+	border: 5px solid #474747;
+}
+
+.case-nav a {
+	border-bottom: none;
+}
+
+.case-nav li a:hover {
+	background-color: #474747;
+
+	transition: all 0.75s;
+}
+
+
+/*  HEADER  ============================================================================= */
+
+
+.case-header {
+	width: 100%;
+	height: 350px;
+	margin-bottom: 40px;
+	margin-top: -30px;
+
+	transition: all 0.5s;
+}
+
+
+#function {
+	background-color: #ed64cc;
+}
+
+#argan {
+	background-color: #703E89;
+}
+#lnt {
+    background-color: green;
+}
+#dangle{
+    background-color: #fa7e55;
+}
+#quora{
+    background-color: #a52522;
+}
+#uber{
+    background-color: black;
+}
+
+/*  CASE STUDY  ============================================================================= */
+
+.project-title, .project-subtitle {
+	text-align: center;
+
+}
+.project-title {
+	padding-top: 150px;
+	font-weight: 900;
+	font-size: 4em;
+	letter-spacing: 1px;
+
+	transition: all 0.28s;
+
+}
+
+.project-subtitle {
+	padding: 10px 0 20px 0;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
+	line-height: 1.2em;
+	border-bottom: 10px solid #fcfcfc;
+
+	transition: all 0.28s;
+}
+
+.case {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.15em;
+	letter-spacing: 0.3px;
+	line-height: 1.425em;
+	overflow: auto;
+
+}
+
+.case h2 {
+	font-weight: 900;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding: 5px 0 5px 0;
+}
+
+.case h3 {
+	font-weight: 900;
+	padding-bottom: 2px;
+}
+
+.case p {
+	font-family: 'Lora', Georgia, serif;
+	padding-bottom: 20px;
+	letter-spacing: 0.1px;
+}
+
+ /*Everything below the metadeta */
+section {              
+	margin-bottom: 4%;
+}
+
+/*  IMG RULES  ============================================================================= */
+
+.case img {
+	box-shadow: 0 1px 3px rgba(0,0,0,.12),
+                0 1px 2px rgba(0,0,0,.24);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Set a max-width on an image */
+.constrain {
+	display: block;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+ /*Ensures that Safari mockups are small
+ enough to fit in viewport */
+section img {
+	max-width: 900px;
+	display: block;
+	margin: 0 auto;
+}
+
+/*Prevents mockups rendered in browser 
+from taking on an extra shadow*/
+.hi-fi img {
+	box-shadow: 0px 0px 0px;
+}
+
+/*  TEXT RULES  ============================================================================= */
+
+/* Re-sizes especially long project titles */
+.long {
+	font-size: 2.9em;
+}
+
+/* Adds extra padding in the case that
+the project title has descenders */
+.descender {
+	padding-top: 8px;
+}
+
+/* Adds margin in the case that a heading gets 
+too close to an image */
+.extra-margin {
+	margin-bottom: 10px;
+}
