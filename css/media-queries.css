@@ -39,9 +39,9 @@
     .down {
         width: 50px;
         height: 50px;
-    }  
+    }
 
-    /*  HOME PAGE  ============================================================================= */ 
+    /*  HOME PAGE  ============================================================================= */
 
     .card-container img {
         opacity: 0.8;
@@ -52,13 +52,13 @@
     }
 
     /*  CASE  ============================================================================= */
-        
+
     .case-content h2 {
         padding: 25px 0 40px 0;
         text-align: center;
         font-weight: 300;
         font-size: 1.5em;
-    }    
+    }
 
     /* Shrinks the size of the Snapchat poster and phone
     renderings so that they fit in the browser window. */
@@ -66,7 +66,7 @@
         margin: 0 auto;
         display: block;
         width: 400px;
-    } 
+    }
 
     section p, section h2, section h3, section blockquote {
         width: 85%;
@@ -76,14 +76,14 @@
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 919px) {  
+@media screen and (min-width: 600px) and (max-width: 919px) {
 
     /*  HOME PAGE  ============================================================================= */
-        
+
 
     #home-initials {
-        font-size: 17.5em;
-        text-align: center;  
+        font-size: 16em;
+        text-align: center;
         margin-top: 35px;
     }
 
@@ -96,7 +96,7 @@
         font-size: 1.6em;
         text-align: left;
         margin: 0 0 50px 9%;
-    }     
+    }
 
     .down, .hide {
         display: none;
@@ -116,7 +116,7 @@
     .project-title, .project-subtitle {
         text-align: left;
         margin-left: 6%;
-    }       
+    }
 
     .project-title {
         font-size: 6em;
@@ -125,9 +125,9 @@
 
     .project-subtitle {
         font-size: 1.5em;
-    }   
+    }
 
-    /* Refers to the two columns at the top of each 
+    /* Refers to the two columns at the top of each
     project page. */
     .meta {
         padding-right: 20px;
@@ -151,7 +151,7 @@
     }
 
     /*  HOME PAGE  ============================================================================= */
-    
+
    .home-header {
         height: 425px;
         margin-bottom: 70px;
@@ -175,7 +175,7 @@
         margin: 0 0 70px 9%;
         max-width: 850px;
 
-    }    
+    }
 
     .intro a:hover {
         border-bottom: 10px solid #00b454;
@@ -184,7 +184,7 @@
 
     .wrapper {
         width: 100%;
-    }        
+    }
 
     .down {
         float: right;
@@ -205,7 +205,7 @@
     .project-title, .project-subtitle {
         text-align: left;
         margin-left: 6%;
-    }       
+    }
 
     .project-title {
         font-size: 8em;
@@ -333,4 +333,3 @@
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-
