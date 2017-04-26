@@ -217,7 +217,7 @@ img {
     transition: .7s all ease;
 }
 .home header h1 {
-    max-width: 730px;
+    max-width: 700px;
     font-weight: 700;
     margin: 0 0 48px;
     position: relative;
@@ -226,8 +226,8 @@ img {
     letter-spacing: -0.02em;
 }
 .home header h2 {
-    max-width: 730px;
-    font-weight: 700;
+    max-width: 600px;
+    font-weight: 500;
     margin: 0 0 48px;
     position: relative;
     z-index: 10;
@@ -316,10 +316,7 @@ h4 {
     text-align: center;
 }
 
-.dls {
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
 
 h1, h2, h3 {
     font-family: Roboto, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -331,7 +328,7 @@ h3 {
 }
 
 h2 {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 32px;
     color: #333;
     margin: 2em auto .8em;
