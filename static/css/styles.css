@@ -204,7 +204,7 @@ img {
     margin-bottom: 0;
 }
 .home header .avatar {
-    width: 520px;
+    width: 420px;
     -webkit-filter: grayscale(100%);
     position: absolute;
     transition: .7s all ease;
@@ -231,9 +231,9 @@ img {
     margin: 0 0 48px;
     position: relative;
     z-index: 10;
-    font-size: 24px;
-    line-height: 36px;
-    color: grey;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
     letter-spacing: -0.02em;
 }
 .home hr {
@@ -318,19 +318,20 @@ h4 {
 
 
 
-h1, h2, h3 {
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+h1, h3, h4 {
+    font-family: Copernicus,-apple-system, BlinkMacSystemFont, Arial, sans-serif;
     font-weight: 700;
 }
-h3 {
+  h3 {
     color: grey;
     font-size: 24px;
 }
 
 h2 {
+  font-family: 'Helvetica', serif;
     font-weight: 400;
     font-size: 32px;
-    color: #333;
+    color: #222222;
     margin: 2em auto .8em;
     letter-spacing: .01em;
     font-weight: bold;
