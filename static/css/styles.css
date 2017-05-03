@@ -205,7 +205,6 @@ img {
 }
 .home header .avatar {
     width: 420px;
-    -webkit-filter: grayscale(100%);
     position: absolute;
     transition: .7s all ease;
     opacity: .25;
@@ -430,7 +429,7 @@ h1 {
     padding-bottom: 60px;
 }
 .home header .avatar {
-    opacity: .8;
+    opacity: 1;
     right: 0;
     bottom: 0;
     top: auto;
